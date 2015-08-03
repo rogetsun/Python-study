@@ -5,9 +5,7 @@ import sys
 print(sys.version_info[0])
 print(sys.version_info)
 
-print(type(sys.version_info))
+print(sys.path)
+print(sys.modules)
 
-import pip
-
-print(pip)
 
