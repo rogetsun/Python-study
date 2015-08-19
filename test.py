@@ -23,7 +23,6 @@ print(ps.setdefault('e', 'eeee'))
 print(ps)
 print(isinstance(ps, dict))
 
-
 L = [
     i * 100 + j * 10 + n
     for i in range(1, 10)
@@ -33,3 +32,40 @@ L = [
     ]
 
 print(L)
+
+
+def formats(x):
+    return x[0:1].upper() + x[1:].lower()
+
+
+str = map(formats, ['LITX', 'songyw'])
+print(str)
+for i in str:
+    print(i)
+
+
+def reFormats(a, b):
+    return a + b
+
+
+print(reFormats.__name__)
+
+from functools import reduce
+
+str = reduce(lambda x, y: x * y, [1, 2, 3, 4, 5])
+print(str)
+
+l = filter(lambda x: x % 2 == 1, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+for i in l:
+    print(i)
+
+
+def add(a, b, c):
+    return a + b + c
+
+
+import functools
+
+add2 = functools.partial(add, b=3, c=2)
+print(add2(12))
+

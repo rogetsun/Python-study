@@ -19,6 +19,6 @@ def max(list):
     return sum
 
 
-print(max([10, 10, 10, 20, 20, 20, 33, 44]))
-
+# print(max([10, 10, 10, 20, 20, 20, 33, 44]))
+print('reduce is loaded')
 # print(add('三角形的树', '北极'))
