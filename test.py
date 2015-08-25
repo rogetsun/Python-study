@@ -69,3 +69,8 @@ import functools
 add2 = functools.partial(add, b=3, c=2)
 print(add2(12))
 
+import time
+
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(10000 * 60 * 60)))
+
+print(24 * 30 * 14)
