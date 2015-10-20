@@ -74,3 +74,14 @@ import time
 print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(10000 * 60 * 60)))
 
 print(24 * 30 * 14)
+
+
+
+
+x = 10
+if x > 10:
+    ret = '>10'
+else:
+    ret = "<10"
+
+print(ret)

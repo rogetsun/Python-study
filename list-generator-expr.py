@@ -19,3 +19,10 @@ for i in range(1, 10):
 
 print(ll)
 
+json = [
+    {'id': 1, 'name': 'n1'},
+    {'id': 2, 'name': 'n2'},
+    {'id': 3, 'name': 'n3'}
+]
+
+print('%s' % (u.get('id') for u in json))

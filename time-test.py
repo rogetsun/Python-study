@@ -13,5 +13,5 @@ print(1024 * 8 / 7)
 dt = datetime.datetime.now()
 print(dt)
 
-t = time.localtime(2 ** 32)  # this is the max datetime in unix windows now
+t = time.localtime(2 ** 16)  # this is the max datetime in unix windows now
 print(time.strftime('%Y-%m-%d %H:%M:%S', t))

@@ -26,3 +26,5 @@ a = ['songyw', 'litx']
 print(',,'.join(a))
 
 print('ssssddddffff'.maketrans('s', '1'))
+
+print('%015d' % (1234566,))

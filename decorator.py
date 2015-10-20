@@ -38,9 +38,15 @@ def decorator2(name):
     return decorator_fn
 
 
+print('-------------------')
+
+
 @decorator1
 def test_f1(param):
     print('函数[%s]参数是：%s' % (test_f1.__name__, param))
+
+
+print('-------------------')
 
 
 @decorator2(name='songyw')
@@ -48,5 +54,19 @@ def test_f2(param):
     print('函数[%s]参数是：%s' % (test_f1.__name__, param))
 
 
+print('-------------------')
+
+
+@decorator1
+@decorator2(name='double')
+def test_double(param):
+    print('函数[%s]参数是：%s' % (test_double.__name__, param))
+
+
+print('-------------------')
+
 test_f1('litx')
+print('-------------------')
 test_f2('litx')
+print('-------------------')
+test_double('litx')
