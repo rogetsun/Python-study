@@ -28,3 +28,5 @@ print(',,'.join(a))
 print('ssssddddffff'.maketrans('s', '1'))
 
 print('%015d' % (1234566,))
+
+print('a1b2c3d4e5f6'[3::2])

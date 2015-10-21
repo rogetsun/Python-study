@@ -26,3 +26,6 @@ json = [
 ]
 
 print('%s' % (u.get('id') for u in json))
+
+t = [('a', ['2', ]), ('a', ['3', ]), ('b', '1')]
+print(dict(t))
