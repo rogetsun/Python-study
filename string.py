@@ -30,3 +30,6 @@ print('ssssddddffff'.maketrans('s', '1'))
 print('%015d' % (1234566,))
 
 print('a1b2c3d4e5f6'[3::2])
+
+print('%02s' % '1')
+print('1'.zfill(2))

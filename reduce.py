@@ -15,10 +15,10 @@ from functools import reduce
 
 
 def max(list):
-    sum = reduce(lambda x, y: (x > y and x or y), list)
-    return sum
+    m = reduce(lambda x, y: (x > y and x or y), list)
+    return m
 
 
-# print(max([10, 10, 10, 20, 20, 20, 33, 44]))
+print(max([10, 10, 10, 20, 20, 20, 33, 44]))
 print('reduce is loaded')
 # print(add('三角形的树', '北极'))
